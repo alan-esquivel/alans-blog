@@ -1,19 +1,42 @@
 ---
-title: "Dynamic Routing and Static Generation"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+title: "How the hell does Google Search Work?"
+excerpt: "Google Search is a fully-automated search engine that uses software known as web crawlers that explore the web regularly to find pages to add to our index. In other words, it's like garbage men going around collecting trash and taking it back to the landfill periodically."
+coverImage: "/assets/blog/dynamic-routing/google-on-smartphone.jpg"
+date: "2024-03-12T05:35:07.322Z"
 author:
-  name: JJ Kasper
-  picture: "/assets/blog/authors/jj.jpeg"
+  name: Alan Esquivel
+  picture: "/assets/blog/authors/alanesquivel.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/assets/blog/dynamic-routing/google-on-smartphone.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+First things first, Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, **you're getting played**. Google doesn't guarantee that it will crawl, index, or serve your page, even if your page follows the [Google Search Essentials](https://developers.google.com/search/docs/essentials).
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+## Google Search is a three stage system
 
-## Lorem Ipsum
+1. [Crawling](https://developers.google.com/search/docs/fundamentals/how-search-works#crawling): Google downloads text, images, and videos from pages it found on the internet with automated programs called crawlers.
+2. [Indexing](https://developers.google.com/search/docs/fundamentals/how-search-works#indexing): Google analyzes the text, images, and video files on the page, and stores the information in the Google index, which is a large database.
+3. [Serving Search Results](https://developers.google.com/search/docs/fundamentals/how-search-works#serving)
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+## Crawling
+
+The first step is discovery, to see what web pages are out! The great adventure of the web crawler to find new web pages. You can call this "URL discovery". The program that does the fetching is called [Googlebot](https://developers.google.com/search/docs/crawling-indexing/googlebot) (also known as a crawler, robot, bot, spider, or garbage man in my example lol). Googlebot uses an algorithmic process to determine which sites to crawl, how often, and how many pages to fetch from each site. 
+
+Not every page is crawlable by the little homie Googlebot, Some pages may be [disallowed for crawling](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt#disallow) by the site owner, other pages may not be accessible without logging in to the site.
+
+
+## Indexing
+
+Once GoogleBot finishes his 8 hour workday, the next step is to index all the webpages he crawled. This includes reviewing title elements, images, alt attributes (you know the one web developers always leave empty cause it takes forever to think of alt tag names), videos and more.
+
+During the indexing process, Google determines if a page is a [duplicate of another page on the internet or canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls). The canonical is the page that may be shown in search results. To select the canonical, we first group together (also known as clustering) the pages that we found on the internet that have similar content, and then we select the one that's most representative of the group. The other pages in the group are alternate versions that may be served in different contexts, like if the user is searching from a mobile device or they're looking for a very specific page from that cluster.
+
+This is important, because during the next stage where Google serves the content, all the nitty gritty dull work you skip when creating web pages, can be the reason your content isn't served in Google Search Results.
+
+## Serving search results
+
+Based on all the data GoogleBot collected and is indexed, depending on what users search, Google will determine what results are the highest quality and most relevant to the user's query. Relevancy is determined by hundreds of factors, which could include information such as the user's location, language, and device (desktop or phone). For example, searching for "bicycle repair shops" would show different results to a user in Paris than it would to a user in Hong Kong.
+
+Based on the user's query the search features that appear on the search results page also change. For example, searching for "bicycle repair shops" will likely show local results and no image results, however searching for "modern bicycle" is more likely to show image results, but not local results.
+
+Photo by [Edho Pratama](https://unsplash.com/@edhoradic?utm_content=creditCopyText&utm_medium=referral&utm_source=thedigitalblog) on [Unsplash](https://unsplash.com/photos/smartphone-showing-google-site-yeB9jDmHm6M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
