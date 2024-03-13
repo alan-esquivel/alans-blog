@@ -5,7 +5,7 @@ coverImage: "/assets/blog/how-the-hell-does-google-search-work/google-on-smartph
 date: "2024-03-12T05:35:07.322Z"
 author:
   name: Alan Esquivel
-  picture: "/assets/blog/authors/alanesquivel.jpg"
+  picture: "/assets/blog/authors/alanesquivel.png"
 ogImage:
   url: "/assets/blog/how-the-hell-does-google-search-work/google-on-smartphone.jpg"
 ---
