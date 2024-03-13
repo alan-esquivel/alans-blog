@@ -5,7 +5,7 @@ coverImage: "/assets/blog/google-consent-v2/lego-handshake.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
   name: Alan Esquivel
-  picture: "/assets/blog/authors/alanesquivel.jpg"
+  picture: "/assets/blog/authors/alanesquivel.png"
 ogImage:
   url: "/assets/blog/google-consent-v2/lego-handshake.jpg"
 ---
