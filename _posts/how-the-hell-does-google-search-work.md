@@ -1,13 +1,13 @@
 ---
 title: "How the hell does Google Search Work?"
 excerpt: "Google Search is a fully-automated search engine that uses software known as web crawlers that explore the web regularly to find pages to add to our index. In other words, it's like garbage men going around collecting trash and taking it back to the landfill periodically."
-coverImage: "/assets/blog/dynamic-routing/google-on-smartphone.jpg"
+coverImage: "/assets/blog/how-the-hell-does-google-search-work/google-on-smartphone.jpg"
 date: "2024-03-12T05:35:07.322Z"
 author:
   name: Alan Esquivel
   picture: "/assets/blog/authors/alanesquivel.jpg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/google-on-smartphone.jpg"
+  url: "/assets/blog/how-the-hell-does-google-search-work/google-on-smartphone.jpg"
 ---
 
 First things first, Google doesn't accept payment to crawl a site more frequently, or rank it higher. If anyone tells you otherwise, **you're getting played**. Google doesn't guarantee that it will crawl, index, or serve your page, even if your page follows the [Google Search Essentials](https://developers.google.com/search/docs/essentials).
